@@ -14,31 +14,31 @@
   @lazyLoaded="handleLazyLoaded"
   @lazyLoadError="handleLazeLoadError">
   <picture>
-    <source srcset="https://picsum.photos/id/200/900/900" media="(min-width: 1300px)">
-    <source srcset="https://picsum.photos/id/200/1250/600" media="(min-width: 1024px)">
-    <source srcset="https://picsum.photos/id/200/1024/450" media="(min-width: 768px)">
+    <source srcset="https://picsum.photos/1200/1200?random=1" media="(min-width: 1300px)">
+    <source srcset="https://picsum.photos/1250/600?random=1" media="(min-width: 1024px)">
+    <source srcset="https://picsum.photos/1024/450?random=1" media="(min-width: 768px)">
     <source srcset="https://picsum.photos/768/768?random=1" media="(max-width: 768px)">
     <img src="https://picsum.photos/id/1015/1300/1000" alt="MDN">
   </picture>
     <picture>
-    <source srcset="https://picsum.photos/id/200/900/900" media="(min-width: 1300px)">
-    <source srcset="https://picsum.photos/id/200/1250/600" media="(min-width: 1024px)">
-    <source srcset="https://picsum.photos/id/200/1024/450" media="(min-width: 768px)">
-    <source srcset="https://picsum.photos/768/768?random=1" media="(max-width: 768px)">
+    <source srcset="https://picsum.photos/1200/1200?random=2" media="(min-width: 1300px)">
+    <source srcset="https://picsum.photos/1250/600?random=2" media="(min-width: 1024px)">
+    <source srcset="https://picsum.photos/1024/450?random=2" media="(min-width: 768px)">
+    <source srcset="https://picsum.photos/768/768?random=2" media="(max-width: 768px)">
     <img src="https://picsum.photos/id/1015/1300/1000" alt="MDN">
   </picture>
     <picture>
-    <source srcset="https://picsum.photos/id/200/900/900" media="(min-width: 1300px)">
-    <source srcset="https://picsum.photos/id/200/1250/600" media="(min-width: 1024px)">
-    <source srcset="https://picsum.photos/id/200/1024/450" media="(min-width: 768px)">
-    <source srcset="https://picsum.photos/768/768?random=1" media="(max-width: 768px)">
+    <source srcset="https://picsum.photos/1200/1200?random=3" media="(min-width: 1300px)">
+    <source srcset="https://picsum.photos/1250/600?random=3" media="(min-width: 1024px)">
+    <source srcset="https://picsum.photos/1024/450?random=3" media="(min-width: 768px)">
+    <source srcset="https://picsum.photos/768/768?random=3" media="(max-width: 768px)">
     <img src="https://picsum.photos/id/1015/1300/1000" alt="MDN">
   </picture>
     <picture>
-    <source srcset="https://picsum.photos/id/200/900/900" media="(min-width: 1300px)">
-    <source srcset="https://picsum.photos/id/200/1250/600" media="(min-width: 1024px)">
-    <source srcset="https://picsum.photos/id/200/1024/450" media="(min-width: 768px)">
-    <source srcset="https://picsum.photos/768/768?random=1" media="(max-width: 768px)">
+    <source srcset="https://picsum.photos/1200/1200?random=4" media="(min-width: 1300px)">
+    <source srcset="https://picsum.photos/1250/600?random=4" media="(min-width: 1024px)">
+    <source srcset="https://picsum.photos/1024/450?random=4" media="(min-width: 768px)">
+    <source srcset="https://picsum.photos/768/768?random=4" media="(max-width: 768px)">
     <img src="https://picsum.photos/id/1015/1300/1000" alt="MDN">
   </picture>
 </slick>
@@ -55,26 +55,27 @@
     data() {
       return {
         slickOptions: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           arrows: false,
           dots:true,
           responsive: [
             {
               breakpoint: 1300,
               settings: {
-                slidesToShow: 3,
+                slidesToShow: 1,
               }
             },
             {
               breakpoint: 1024,
               settings: {
-                slidesToShow: 2,
+                slidesToShow: 1,
               }
             },
             {
               breakpoint: 768,
               settings: {
                 slidesToShow: 1,
+                autoplay: true,
               }
             }
           ]

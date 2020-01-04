@@ -101,26 +101,35 @@
 .slick-dots
 {
     position: absolute;
-    bottom: 3px;
+    bottom: 30px;
     z-index: 1;
-
+    right:25px;
     display: block;
-
     width: 100%;
     padding: 0;
     margin: 0;
-
     list-style: none;
+    text-align: right;
 
-    text-align: center;
+    @include desktop-small {
+      text-align: right;
+      bottom: 30px;
+      right:25px;
+      left:inherit;
+    }
+    @include desktop-big {
+      text-align: right;
+      bottom: 30px;
+      right:25px;
+      left:inherit;
+    }
 }
 .slick-dots li
 {
     position: relative;
-
     display: inline-block;
     background: #fff;
-    width: 30px;
+    width: 15px;
     height: 2px;
     margin: 0 5px;
     padding: 0;
