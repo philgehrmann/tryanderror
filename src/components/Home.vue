@@ -25,7 +25,7 @@
       <div class="content--item--imagecontent">
         <div class="content--item--imagecontent background">
           <picture>
-            <source srcset="https://picsum.photos/id/241/2000/1000" media="(min-width: 1300px)">
+            <source srcset="https://picsum.photos/id/188/2000/1000" media="(min-width: 1300px)">
             <source srcset="https://picsum.photos/id/241/1250/600" media="(min-width: 1024px)">
             <source srcset="https://picsum.photos/id/241/1024/600" media="(min-width: 768px)">
             <source srcset="https://picsum.photos/id/241/768/768" media="(max-width: 768px)">

@@ -2,10 +2,10 @@
   <div id="app">
       <div class="head-container">
         <picture>
-          <source srcset="https://picsum.photos/id/272/3000/1500" media="(min-width: 1300px)">
-          <source srcset="https://picsum.photos/id/272/1250/600" media="(min-width: 1024px)">
-          <source srcset="https://picsum.photos/id/272/1200/600" media="(min-width: 768px)">
-          <source srcset="https://picsum.photos/id/272/768/768" media="(max-width: 768px)">
+          <source srcset="https://picsum.photos/id/1083/3000/1500" media="(min-width: 1300px)">
+          <source srcset="https://picsum.photos/id/188/1250/600" media="(min-width: 1024px)">
+          <source srcset="https://picsum.photos/id/188/1200/600" media="(min-width: 768px)">
+          <source srcset="https://picsum.photos/id/188/768/768" media="(max-width: 768px)">
         <img src="https://picsum.photos/300/1000" alt="MDN" v-parallax="0.2">
       </picture>
   </div>

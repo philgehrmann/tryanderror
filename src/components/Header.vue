@@ -4,6 +4,15 @@
       <div class="header-button--icon" ></div><p>MENU</p>
   </div>
   <div class="logo"></div>
+  <div class="header-navigation">
+    <ul>
+      <li><a href="">HOME</a></li>
+      <li><a href="">THE HUB</a></li>
+      <li><a href="">SPEISEKARTE</a></li>
+      <li><a href="">FIND US</a></li>
+      <li><a href="">KONTAKT</a></li>
+    </ul>
+  </div>
   <div class="header--open">
     <div class="header--open-now"></div>
     <div class="header--open-menu"></div>
@@ -58,7 +67,53 @@ export default {
   transition: all 0.1s ease-out;
   max-width: 2200px;
   margin: 0 auto;
-
+  
+  &-navigation {
+    display:none;
+    @include desktop-small {
+      display:block;
+      margin-top: 2rem;
+      text-align: right;
+    }
+     @include desktop-big {
+      display:block;
+      margin-top: 2rem;
+      text-align: right;
+    }
+    ul {
+      li {
+        display: inline-block;
+        position:relative;
+        margin-left: 25px;
+        a {
+          color: $color-white;
+          @include font-size(0.9);
+          padding: 1rem;
+          overflow:hidden;
+          &:after {
+              content:"";
+              position:absolute;
+              height:100%;
+              left:0;
+              width:0;
+              border-bottom:1px solid $color-white-75;
+              transition: all 1s ease;
+            }
+           &:hover {
+            &:after {
+              content:"";
+              position:absolute;
+              height:100%;
+              width:100%;
+              border-bottom:1px solid $color-white-75;
+              color: $color-black;
+              transition: all 0.5s ease;
+            }
+          }
+        }
+      }
+    }
+  }
 
   &-button {
     width:100%;
@@ -71,9 +126,11 @@ export default {
 
       @include desktop-small {
             height: 100px;
+            display:none;
       }
         @include desktop-big {
             height: 100px;
+            display:none;
       }
 
     &--icon {
@@ -121,7 +178,7 @@ export default {
   }
 
   &.scrolled {
-    background: $color-white-50;
+    background: $color-white-75;
     transition: all 0.3s ease-in;
     position:fixed;
 
@@ -165,14 +222,14 @@ export default {
     grid-template-columns: 10% 65% 35%;
   }
   @include desktop-small {
-    height: 100px;
-    grid-template-columns: 10% 65% 35%;
+    height: 75px;
+    grid-template-columns: 25% 65% 10%;
     align-self: center;
     justify-self: center;
   }
   @include desktop-big {
-    height: 100px;
-    grid-template-columns: 4% 82% 14%;
+    height: 75px;
+    grid-template-columns: 25% 65% 10%;
     align-self: center;
     justify-self: center;
   }
